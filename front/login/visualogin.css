@@ -1,5 +1,9 @@
 a {
+    color: black;
     text-align: center;
+}
+a:hover {
+    color: white;
 }
 
 .login {
