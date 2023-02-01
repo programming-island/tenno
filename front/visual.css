@@ -1,6 +1,10 @@
 .card-columns {
-    width: 1100px;
-    margin: 0 auto;
+    padding-top: 10px;
+    width: 1220px;
+}
+
+.card-img-top {
+    padding: 5px;
 }
 
 div ul li a:hover {
