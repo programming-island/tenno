@@ -1,6 +1,11 @@
 .card-columns {
-    padding-top: 10px;
-    width: 1220px;
+    width: auto;
+    padding: 10px;
+}
+
+.centro {
+    width: 900px;
+    margin: 0 auto;
 }
 
 .card-img-top {
