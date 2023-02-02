@@ -1,3 +1,37 @@
+.log {
+    background: gray;
+    width: 500px;
+    margin: 100px auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.form-control {
+    padding-right: 240px;
+}
+
+.log form {
+    height: 300px;
+    justify-content: center;
+}
+
+.btn {
+    padding-right: 90px;
+    padding-left: 90px;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+  input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0;
+}
+
+.form-control {
+    border: 2px black
+}
+
 a {
     color: black;
 }
@@ -6,32 +40,4 @@ a:hover {
     color: white;
 }
 
-.cad {
-    background: gray;
-    justify-content: center;
-    width: 500px;
-    margin: 100px auto;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 5px;
-}
 
-.cad form {
-    height: 400px;
-    justify-content: center;
-}
-
-input[type="number"]::-webkit-inner-spin-button, 
-  input[type="number"]::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
-    margin: 0;
-}    
-
-.pad {
-    padding-right: 240px;
-}
-
-
-.sombra {
-    box-shadow: 0px 0px 10px gray;
-}
