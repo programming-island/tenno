@@ -1,0 +1,43 @@
+/* ----------
+Categorias
+----------*/
+.list-group {
+  width: 190px;
+  float: left;
+  margin: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.list-group a {
+  padding: 5px;
+}
+
+/* ----------
+Tela Principal
+----------*/
+.centro {
+  min-width: 500px;
+  max-width: 900px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.card-columns {
+  width: auto;
+  padding: 10px;
+}
+
+.card-img-top {
+  padding: 5px;
+}
+
+div ul li a:hover {
+  border-bottom: 1px solid gray;
+}
+
+button a,
+a:hover {
+  text-decoration: none;
+  color: gray;
+}
