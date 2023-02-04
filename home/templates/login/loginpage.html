@@ -1,5 +1,6 @@
 {% extends 'base.html' %} 
 {% load static %}
+{%block 'titulo'%}Login{%endblock %}
 {%block 'liks'%}<link rel="stylesheet" href="{% static 'css/visualogin.css' %}" />{%endblock%}
 {%block 'conteudo'%}
 <!-- Optional JavaScript; choose one of the two! -->
@@ -24,7 +25,7 @@
     -->
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <a class="navbar-brand mx-auto" href="/loginpage.html">Tenno</a>
+  <a class="navbar-brand mx-auto" href="http://127.0.0.1:8000/">Tenno</a>
 </nav>
 
 <div class="log">
@@ -48,6 +49,6 @@
     </div>
     <button class="btn btn-dark">Login</button>
   </form>
-  <a href="cadastro.html">Não tem cadastro? Clique aqui!</a>
+  <a href="http://127.0.0.1:8000/login/cadastro/">Não tem cadastro? Clique aqui!</a>
 </div>
 {%endblock%}
