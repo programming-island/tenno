@@ -19,22 +19,50 @@
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <a class="navbar-brand mx-auto" href="http://127.0.0.1:8000/">Tenno</a>
     </nav>
-    
+      {% include 'partial/_mensagens.html' %}
     <div class="cad">
-        <form class="form-inline" action="">
+        <form method="POST" action="{% url 'cadastro'%}" class="form-inline">
+          
+          {% csrf_token %}
             <h2>Cadastre-se</h2>
             <div>
-                <input class="form-control mr-2" type="text" placeholder="Nome" maxlength="20">
-                <input class="form-control" type="text" placeholder="Sobrenome" maxlength="20">
+                <input class="form-control mr-2" 
+                name = "nome" 
+                value="{{request.POST.nome}}"
+                type="text" 
+                placeholder="Nome" 
+                maxlength="20">
+                <input class="form-control" 
+                name="sobrenome" 
+                value="{{request.POST.sobrenome}}"
+                type="text" 
+                placeholder="Sobrenome" 
+                maxlength="20">
             </div>
             <div>
-                <input class="form-control pad" type="email" placeholder="E-mail" maxlength="50">
+                <input class="form-control pad" 
+                name ="email"
+                value ="{{requesr.POST.email}}"
+                type="email" 
+                placeholder="E-mail"
+                maxlength="50">
             </div>
             <div>
-                <input class="form-control mr-2" type="number" placeholder="Telefone" maxlength="11" pattern="[0-9]">
-                <input class="form-control" type="password" placeholder="senha" maxlength="16">
+                <input class="form-control mr-2"
+                name ="telefone" 
+                value="{{request.POST.telefone}}"
+                type="number" 
+                placeholder="Telefone" 
+                maxlength="11" 
+                pattern="[0-9]">
+                <input class="form-control" 
+                name ="senha"
+                value ="{{request.POST.senha}}" 
+                type="password" 
+                placeholder="senha" 
+                maxlength="16">
             </div>
-            <button class="btn btn-dark">Cadastrar</button>
+            <button type ="submit" class="btn btn-dark">Cadastrar</button>
         </form>
         <a href="http://127.0.0.1:8000/login/">Já tem uma conta? Clique aqui!</a>
     </div>
