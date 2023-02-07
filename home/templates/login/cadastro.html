@@ -40,6 +40,14 @@
                 maxlength="20">
             </div>
             <div>
+                <input class="form-control mr-2" 
+                name = "nome" 
+                value="{{request.POST.nome}}"
+                type="text" 
+                placeholder="Nome de Usuário" 
+                maxlength="20">
+            </div>
+            <div>
                 <input class="form-control pad" 
                 name ="email"
                 value ="{{request.POST.email}}"
@@ -58,7 +66,12 @@
                 <input class="form-control" 
                 name ="senha" 
                 type="password" 
-                placeholder="senha" 
+                placeholder="Senha" 
+                maxlength="16">
+                <input class="form-control" 
+                name ="senha" 
+                type="password" 
+                placeholder="Repita a senha" 
                 maxlength="16">
             </div>
             <button type ="submit" class="btn btn-dark">Cadastrar</button>
