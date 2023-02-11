@@ -71,6 +71,5 @@ def cadastro(request):
                                                       last_name = sobrenome)
 
     user.save()
-    return redirect('login')
                                                       
         
